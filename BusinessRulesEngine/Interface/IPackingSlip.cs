@@ -2,6 +2,6 @@
 {
     interface IPackingSlip
     {
-        public void PrintSlip();
+        public string PrintSlip();
     }
 }

@@ -2,6 +2,6 @@
 {
     interface IEmail
     {
-        public void Send();
+        public string Send();
     }
 }

@@ -2,7 +2,7 @@
 
 namespace BusinessRulesEngine.ConcreteClass
 {
-    class Video : IProduct,IFree
+   public class Video : IProduct,IFree
     {
         public  int ProductId { get; set; }
 
@@ -10,9 +10,11 @@ namespace BusinessRulesEngine.ConcreteClass
         {
             AddPromoItemToPackage();
         }
-        public void AddPromoItemToPackage()
+        public string AddPromoItemToPackage()
         {
             //Add promoItem to package if the ordered video is Learning to ski
+
+            return "Added promo Item";
         }
     }
 }

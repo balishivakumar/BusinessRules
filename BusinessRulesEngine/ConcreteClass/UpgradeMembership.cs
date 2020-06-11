@@ -2,7 +2,7 @@
 
 namespace BusinessRulesEngine.ConcreteClass
 {
-    class UpgradeMembership : IProduct, IEmail
+   public class UpgradeMembership : IProduct, IEmail
     {
         public int ProductId { get; set; }
 
@@ -10,9 +10,10 @@ namespace BusinessRulesEngine.ConcreteClass
         {
             Send();
         }
-        public void Send()
+        public string Send()
         {
             //Call email send class
+            return "Mail Sent";
         }
     }
 }

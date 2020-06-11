@@ -2,6 +2,6 @@
 {
     interface ICommision
     {
-        public void CalculateCommision();
+        public string CalculateCommision();
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BusinessRulesEngine.ConcreteClass
 {
-    class PhysicalProduct : IProduct,ICommision,IPackingSlip
+   public class PhysicalProduct : IProduct,ICommision,IPackingSlip
     {
         public  int ProductId { get; set; }
 
@@ -14,14 +14,18 @@ namespace BusinessRulesEngine.ConcreteClass
             PrintSlip();
             CalculateCommision(); 
         }
-        public void CalculateCommision()
+        public string CalculateCommision()
         {
             //Calculate Commision 
+
+            return "Commision calculated";
         }
 
-        public void PrintSlip()
+        public string PrintSlip()
         {
             //Print Packaing slip
+
+            return "Printed slip";
         }
     }
 }

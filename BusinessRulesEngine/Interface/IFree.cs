@@ -2,6 +2,6 @@
 {
     interface IFree
     {
-        public void AddPromoItemToPackage();
+        public string AddPromoItemToPackage();
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BusinessRulesEngine.ConcreteClass
 {
-    class NewMembership : IProduct,IEmail
+   public class NewMembership : IProduct,IEmail
     {
         public int ProductId { get; set; }
 
@@ -13,9 +13,11 @@ namespace BusinessRulesEngine.ConcreteClass
         {
             Send();
         }
-        public void Send()
+        public string Send()
         {
             //Call email send class
+
+            return "Mail Sent";
         }
     }
 }

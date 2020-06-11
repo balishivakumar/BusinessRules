@@ -2,7 +2,7 @@
 
 namespace BusinessRulesEngine.ConcreteClass
 {
-    class Book : IProduct, ICommision, IPackingSlip
+    public class Book : IProduct, ICommision, IPackingSlip
     {
         public  int ProductId { get; set; }
 
@@ -14,14 +14,18 @@ namespace BusinessRulesEngine.ConcreteClass
         }
 
 
-        public void CalculateCommision()
+        public string CalculateCommision()
         {
             //Calculate Commision 
+
+            return "Commision calculated";
         }
 
-        public void PrintSlip()
+        public string PrintSlip()
         {
             //Print Two Packaing slip
+
+            return "printed 2 slips";
         }
     }
 }
